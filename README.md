@@ -44,7 +44,3 @@ To get a local copy up and running, follow these simple steps.
 *   **React:** A JavaScript library for building user interfaces.
 *   **Vite:** A fast build tool and development server for modern web projects.
 *   **ESLint:** A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
-
-## Live Demo
-
-[Link to live demo](https://your-live-demo-link.com)
