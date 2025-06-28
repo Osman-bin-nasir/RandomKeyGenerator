@@ -1,0 +1,71 @@
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input {
+  margin-left: 10px;
+  padding: 5px;
+  width: 150px;
+}
+
+.checkbox-group {
+  margin-bottom: 15px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.button-group {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.generate-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.generate-btn:hover {
+  background-color: #45a049;
+}
+
+.output {
+  background: #fafafa;
+  padding: 10px;
+  border-radius: 6px;
+  word-break: break-word;
+  font-family: monospace;
+  color: #222;
+}
+
