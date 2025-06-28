@@ -1,12 +1,50 @@
-# React + Vite
+# 🔐 Random Key Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and secure random key generator built with React and Vite.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   Generate random keys of a specified length (between 4 and 64).
+*   Include or exclude uppercase letters, lowercase letters, numbers, and symbols.
+*   Copy the generated key to your clipboard with a single click.
+*   Dark mode enabled by default for a better user experience.
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+*   Node.js and npm installed on your machine.
+
+### Installation
+
+1.  Clone the repo
+    ```sh
+    git clone https://github.com/your_username/random-key-generator.git
+    ```
+2.  Install NPM packages
+    ```sh
+    npm install
+    ```
+3.  Start the development server
+    ```sh
+    npm run dev
+    ```
+
+## Usage
+
+1.  Enter the desired length of the key (between 4 and 64).
+2.  Select the character sets you want to include in the key.
+3.  Click the "Generate Key" button.
+4.  Click the "Copy" button to copy the generated key to your clipboard.
+
+## 🛠️ Technologies Used
+
+*   **React:** A JavaScript library for building user interfaces.
+*   **Vite:** A fast build tool and development server for modern web projects.
+*   **ESLint:** A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+
+## Live Demo
+
+[Link to live demo](https://your-live-demo-link.com)

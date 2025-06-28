@@ -9,6 +9,7 @@ const characterSets = {
 
 function RandomkeyGeneration() {
   const [key, setKey] = useState("");
+  const [copied, setCopied] = useState(false);
   const [length, setLength] = useState("8");
   const [settings, setSettings] = useState({
     uppercase: true,
@@ -16,6 +17,7 @@ function RandomkeyGeneration() {
     numbers: true,
     symbols: true,
   });
+  
 
   const handleCheckBox = (e) => {
     const { name, checked } = e.target;
@@ -54,11 +56,23 @@ function RandomkeyGeneration() {
     }
 
     setKey(newKey);
+    setCopied(false);
+  };
+
+  const copyToClipboard = () => {
+    if (key && !key.startsWith("❌")) {
+      navigator.clipboard.writeText(key);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
   };
 
   return (
     <div className="container">
-      <h2 className="title">🔐 Random Key Generator</h2>
+      <div className="header">
+        <h2 className="title">🔐 Random Key Generator</h2>
+        
+      </div>
 
       <div className="input-group">
         <label>
@@ -96,6 +110,9 @@ function RandomkeyGeneration() {
 
       <div className="output">
         <p><strong>Generated Key:</strong> {key}</p>
+        <button onClick={copyToClipboard} className="copy-btn">
+          {copied ? "Copied!" : "Copy"}
+        </button>
       </div>
     </div>
   );
